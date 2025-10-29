@@ -1,41 +1,80 @@
-# Prerequisites
-*.d
+# ========================================
+# For Arduino / STM32 / ESP32 (Zephyr RTOS)
+# ========================================
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
+# --- Arduino / STM32 ---
+*.ino.cpp
+*.elf
+*.bin
+*.hex
 *.out
-*.app
+*.map
+*.d
+*.o
+*.bak
+*.tmp
+*.log
+*.dSYM/
+build*/
+Build*/
+cmake-build*/
+__pycache__/
 
-# debug information files
-*.dwo
+# Arduino backup / temp
+*~
+*.swp
+*.swo
+*.dmp
+
+# --- Zephyr / ESP-IDF ---
+# Build artifacts
+build/
+build*/ 
+zephyr/
+zephyr/*
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+ninja.*
+*.ninja
+modules/
+samples/
+drivers/
+subsys/
+*.a
+*.lst
+
+# West / Zephyr workspace caches
+.west/
+west.log
+
+# Python venv and caches
+.venv/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+__pycache__/
+
+# ESP-IDF specific
+sdkconfig
+sdkconfig.old
+esp-idf/
+dist/
+.env/
+esp32s3_gateway/build/
+esp32s3_gateway/*.map
+
+# --- OS / Editor files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+*.bak
+
